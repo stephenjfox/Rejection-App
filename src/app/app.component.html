@@ -1,3 +1,7 @@
 <h1>
   {{title}}
 </h1>
+<rejection-form (askCreated)="displayAsk($event)"></rejection-form>
+<ul>
+  <ask-item *ngFor="let ask of askList" [ask]="ask"></ask-item>
+</ul>
